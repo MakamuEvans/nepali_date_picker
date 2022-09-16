@@ -539,8 +539,8 @@ Future<NepaliDateTime?> _showCupertinoDatePicker({
   Language language = Language.english,
   DateOrder dateOrder = DateOrder.mdy,
 }) async {
-  assert(firstDate.year >= 2000 && lastDate.year <= 2099,
-      'Invalid Date Range. Valid Range = [2000, 2099]');
+  assert(firstDate.year >= 1970 && lastDate.year <= 2050,
+      'Invalid Date Range. Valid Range = [1970, 2050]');
   assert(!initialDate.isBefore(firstDate),
       'initialDate must be on or after firstDate');
   assert(!initialDate.isAfter(lastDate),
